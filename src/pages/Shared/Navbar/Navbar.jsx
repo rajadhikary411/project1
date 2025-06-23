@@ -1,23 +1,24 @@
-import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between max-w-[1300px] mx-auto items-center font-poppins'>
-            <div className='font-bold text-[43px]'>
-                EduGrid
+        <div className='bg-[#DCE8F5]'>
+            <div className='flex justify-between max-w-[1300px] mx-auto items-center font-poppins pt-[26px] '>
+                <div className='font-bold text-[43px]'>
+                    <span className='text-[#003366] [-webkit-text-stroke:1px_black]'>Edu</span><span className='text-white [-webkit-text-stroke:1px_black]'>Grid</span>
+                </div>
+                <div className='flex gap-8 font-medium text-[25px] items-center text-[#457B9D]'>
+                    <div>Home</div>
+                    <div>About</div>
+                    <div>Contact</div>
+                    <div>Blog</div>
+                    <div>All Classes</div>
+                </div>
+                <div className='flex font-medium text-[22px] font-dmsans gap-8 items-center'>
+                    <button className=' px-[46px] py-[11px] rounded-[30px] border-[#423FE5] border-2 text-[#423FE5]'>Sign Up</button>
+                    <button className='px-[46px] py-[11px] rounded-[30px] text-white bg-[#423FE5] border-[#423FE5] border-2'>Login</button>
+                </div>
             </div>
-            <div className='flex gap-8 font-medium text-[25px]'>
-                <div>Home</div>
-                <div>About</div>
-                <div>Contact</div>
-                <div>Blog</div>
-                <div>All Classes</div>
-            </div>
-            <div className='flex font-medium text-[22px] font-dmsans gap-8'>
-                <button className='border px-[46px] py-[11px] rounded-[30px]'>Sign Up</button>
-                <button className='border px-[46px] py-[11px] rounded-[30px]'>Login</button>
-            </div>
-        </div>
+       </div>
     );
 };
 
