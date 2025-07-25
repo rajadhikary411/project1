@@ -2,24 +2,30 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className='bg-[#DCE8F5]'>
-            <div className='flex justify-between max-w-[1300px] mx-auto items-center font-poppins pt-[26px] pb-[12px]'>
-                <div className='font-bold text-[43px]'>
-                    <span className='text-[#003366] [-webkit-text-stroke:1px_black]'>Edu</span><span className='text-white [-webkit-text-stroke:1px_black]'>Grid</span>
+        <div className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+            <div className="flex justify-between items-center max-w-[1300px] mx-auto py-4 px-6 font-poppins">
+                {/* Logo */}
+                <div className="text-xl font-semibold text-gray-800">
+                    logo
                 </div>
-                <div className='flex gap-8 font-medium text-[25px] items-center text-[#457B9D]'>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="about">About</NavLink>
-                    <NavLink to="contact">Contact</NavLink>
-                    <NavLink to="blog">Blog</NavLink>
-                    <NavLink to="all-classes">All Classes</NavLink>
+
+                {/* Navigation Links */}
+                <div className="flex gap-6 text-sm font-medium text-gray-800 uppercase">
+                    <NavLink to="/" className="hover:text-black">Features</NavLink>
+                    <NavLink to="/about" className="hover:text-black">Profile</NavLink>
+                    <NavLink to="/contact" className="hover:text-black">Bestsellers</NavLink>
+                    <NavLink to="/block" className="hover:text-black">Reviews</NavLink>
+                    <NavLink to="/aa-classes" className="hover:text-black">About Us</NavLink>
                 </div>
-                <div className='flex font-medium text-[22px] font-dmsans gap-8 items-center'>
-                    <button className=' px-[46px] py-[11px] rounded-[30px] border-[#423FE5] border-2 text-[#423FE5]'>Sign Up</button>
-                    <button className='px-[46px] py-[11px] rounded-[30px] text-white bg-[#423FE5] border-[#423FE5] border-2'>Login</button>
+
+                {/* Buy Now Button */}
+                <div>
+                    <button className="bg-gray-800 text-white px-6 py-2 rounded-full text-sm hover:bg-black transition">
+                        Buy Now
+                    </button>
                 </div>
             </div>
-       </div>
+        </div>
     );
 };
 
